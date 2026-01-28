@@ -25,7 +25,7 @@ MariaDB [db_universitas]> create table mahasiswa(
 Query OK, 0 rows affected (0.052 sec)
 
 MariaDB [db_universitas]> insert into mahasiswa (nama, alamat, thn_lahir, thn_masuk, jurusan) values
-    -> ('caca', 'Bogor', 2000, 2015, 'sastra inggris'), ('cici', 'Jakarta', 2002, 2017, 'sastra ingris'),
+    -> ('caca', 'Bogor', 2000, 2015, 'sastra inggris'), ('cici', 'Jakarta', 2002, 2017, 'sastra inggris'),
     -> ('cece', 'Bogor', 2005, 2015, 'informatika'), ('cucu', 'Depok', 2000, 2018, 'ked. Gigi'),
     -> ('coco', 'Tanggerang', 2001, 2015, 'sistem informasi');
 Query OK, 5 rows affected (0.039 sec)
@@ -36,7 +36,7 @@ MariaDB [db_universitas]> select * from mahasiswa;
 | id | nama | alamat     | thn_lahir | thn_masuk | jurusan          |
 +----+------+------------+-----------+-----------+------------------+
 |  1 | caca | Bogor      |      2000 |      2015 | sastra inggris   |
-|  2 | cici | Jakarta    |      2002 |      2017 | sastra ingris    |
+|  2 | cici | Jakarta    |      2002 |      2017 | sastra inggris   |
 |  3 | cece | Bogor      |      2005 |      2015 | informatika      |
 |  4 | cucu | Depok      |      2000 |      2018 | ked. Gigi        |
 |  5 | coco | Tanggerang |      2001 |      2015 | sistem informasi |
@@ -105,4 +105,5 @@ MariaDB [db_universitas]> select nama, jurusan, thn_masuk - thn_lahir as usia_sa
 3 rows in set (0.001 sec)
 
 MariaDB [db_universitas]> truncate table mahasiswa;
+
 Query OK, 0 rows affected (0.065 sec)
